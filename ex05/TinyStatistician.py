@@ -69,7 +69,7 @@ class TinyStatistician():
         for i in x:
             result += (i - m) ** 2
 
-        return result / (length - 1)
+        return result / length
 
     @staticmethod
     def std(x):
@@ -82,7 +82,7 @@ class TinyStatistician():
 
 
 if __name__ == "__main__":
-    dataset = [1, 2, 3, 4]
+    dataset = [1, 42, 300, 10, 59]
 
     t = TinyStatistician()
     print('dataset:      ', dataset)
